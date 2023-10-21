@@ -12,7 +12,7 @@ public enum Map {
     BREEZE("Breeze"),
     SPLIT("Split");
 
-    private String name;
+    private final String name;
 
     Map(String name){
         this.name = name;

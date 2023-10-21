@@ -30,10 +30,6 @@ public enum Weapon {
         this.type = type;
     }
 
-    public void hitEnemy(){
-        System.out.println(damage + " damage has given to enemy");
-    }
-
     public int getPrice() {
         return price;
     }

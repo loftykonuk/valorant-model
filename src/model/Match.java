@@ -1,6 +1,6 @@
 package model;
 
-public class Match {
+public class  Match {
 
     public int firstTeamsScore;
 
@@ -10,7 +10,7 @@ public class Match {
 
     public String secondTeamSide;
 
-    Match(int firstTeamsScore, int secondTeamsScore, String firstTeamSide, String secondTeamSide){
+    public Match(){
         this.firstTeamsScore = 0;
         this.secondTeamsScore = 0;
         this.firstTeamSide= "Attacker";
@@ -47,5 +47,17 @@ public class Match {
 
     public void setSecondTeamSide(String secondTeamSide) {
         this.secondTeamSide = secondTeamSide;
+    }
+
+    public String getMatchScore(){
+        return firstTeamsScore + "-" + secondTeamsScore;
+    }
+
+    public void firstTeamRoundWin(){
+        firstTeamsScore++;
+    }
+
+    public void secondTeamRoundWin(){
+        secondTeamsScore++;
     }
 }

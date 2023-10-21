@@ -4,20 +4,20 @@ import java.util.Arrays;
 
 public class Market{
 
-    private final String[] skinName;
+    private String[] productName;
 
-    private final int[] priceOfSkins;
+    private int[] priceOfProduct;
 
-    public Market(String[] skinName, int[] priceOfSkin ) {
-        this.skinName = skinName;
-        this.priceOfSkins = priceOfSkin;
+    public Market(String[] productName, int[] priceOfProduct ) {
+        this.productName = productName;
+        this.priceOfProduct = priceOfProduct;
     }
 
-    public String getPriceOfSkin() {
-        return Arrays.toString(priceOfSkins);
+    public String getProductPrices() {
+        return Arrays.toString(priceOfProduct);
     }
 
-    public String getSkins(){
-        return Arrays.toString(skinName);
+    public String getProductNames(){
+        return Arrays.toString(productName);
     }
 }
