@@ -7,10 +7,13 @@ public class User {
 
     private int gameCredits;
 
-    public User(String username, String password) {
+    private String region;
+
+    public User(String username, String password, String region) {
         this.username=username;
         this.password=password;
         this.gameCredits=0; // credits are 0 when account first created.
+        this.region=region;
     }
 
     public void setGameCredits(int gameCredits) {
@@ -29,8 +32,16 @@ public class User {
         return password;
     }
 
-    //there is no username bcs you can't change your username. I am not sure tho :).
+    //there is no setUsername bcs you can't change your username. I am not sure tho :).
     public String getUsername(){
         return username;
+    }
+
+    public void setRegion(String rgn){
+        region = rgn;
+    }
+
+    public String getRegion(){
+        return region;
     }
 }
